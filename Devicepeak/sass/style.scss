@@ -1,0 +1,666 @@
+      /*VARIABLES*/
+$textColor: #eeeeee;
+$navbarColor: rgba(0, 0, 0, 0.8);
+$headingTextColor: #c9c9ae;
+$newsTextBackgr: rgba(0, 0, 0, 0.6);
+$bgrdcolor: #222831;
+$textColorTwo: #00adb5;
+$wrapColor: #393e46;
+
+html body{
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $textColor;
+  background-color: $bgrdcolor;
+  a{
+    text-decoration: none !important;
+  }
+}
+      /*NAVBAR*/
+
+.navbar.navbar-inverse{
+  max-width: 1600px;
+  background-color: $navbarColor;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+#logo{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/dplogo.gif");
+  background-size: cover;
+  margin: 5px 10px 0 0;
+}
+#site-name{
+  display: inline-block;
+  font-size: 2em;
+  color: $textColorTwo;
+  margin-right: 1em;
+  text-decoration: none;
+}
+#subbtn{
+  outline: none;
+}
+.dropbtn {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $bgrdcolor;
+  min-width: 100px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  a {
+    display: block;
+    color: $textColor;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    &:hover {
+      background-color: #f1f1f1
+    }
+  }
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+      /*SLIDER*/
+
+.vignette{
+  box-shadow: inset -1px 1px 75px 35px rgb(0, 0, 0);
+}
+.slide-img{
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  height: 650px;
+  margin: 0 auto;
+  &.img-one{
+    background: url("../images/galaxy8.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.img-two{
+    background: url("../images/lg-g6.jpg")no-repeat;
+    background-size: cover;
+  }
+  &.img-three{
+    background: url("../images/ip7vs6.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+.title-img-text{
+  display: inline-block;
+  font-size: 4em;
+  margin-top: 300px;
+  padding: 0 20px;
+  color: $textColor;
+  background-color: $newsTextBackgr;
+  border-radius: 0 10px 10px 0;
+  &:hover{
+    background-color: $textColorTwo;
+  }
+}
+
+      /*NEWS*/
+
+#container-wrap{
+  background-color: $wrapColor;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+#more-news-quad{
+  padding: 0;
+}
+.horizont-text{
+  display: inline-block;
+  height: 40px;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  line-height: 40px;
+  margin: 30px 0 35px;
+  span{
+    font-weight: 900;
+  }
+}
+.line-wrap{
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  padding-top: 16px;
+  margin: 30px 0 20px;
+  .horizont-line{
+    height: 5px;
+    border-radius: 3px;
+    background: #00aad5;
+    background: -moz-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -webkit-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -o-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -ms-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: linear-gradient(to right, #00aad5 0%, #222831 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aad5', endColorstr='#222831', GradientType=1 );
+  }
+}
+.phone-image-text{
+  color: $headingTextColor;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 20px 20px 0;
+}
+.news-item{
+  display: block;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  &:hover {
+    .news-text {
+      height: 100%;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      transition: height 1s, margin .5s;
+    }
+  }
+  .news-text{
+    display: block;
+    height: 41%;
+    width: 80%;
+    color: $textColor;
+    background: $newsTextBackgr;
+    margin: 178px 0 0 0;
+    text-overflow: ellipsis;
+    border-radius: 0 5px 5px 0;
+    transition: .5s;
+    strong{
+      font-size: 2em;
+      margin: 3px;
+    }
+    span{
+      display: inline-block;
+      margin: 3px;
+    }
+  }
+  &.news-one {
+    background: url("../images/gn7new.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-two{
+    background: url("../images/instagram_news.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-three{
+    background: url("../images/lgv20.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-four{
+    background: url("../images/ztecam.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-five{
+    background: url("../images/nvidia-titan.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-six{
+    background: url("../images/ghome.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.news-seven{
+    height: 550px;
+    background: url("../images/mipad3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+.newest-dev{
+  display: block;
+  height: 360px;
+  width: 100%;
+  background-color: $bgrdcolor;
+  border-radius: 10px;
+  padding: 10px;
+  &:hover{
+      background-color: $newsTextBackgr;
+  }
+  .newest-dev-img{
+    display: inline-block;
+    height: 340px;
+    width: 184px;
+    &.dev-img-one{
+      background: url("../images/devices/mimix.gif") no-repeat;
+      background-size: contain;
+    }
+    &.dev-img-two{
+      background: url("../images/devices/mimixb.gif") no-repeat;
+      background-size: contain;
+    }
+  }
+  .newest-dev-txt{
+    display: inline-block;
+    max-width: 86px;
+    color: $textColor;
+    background-color: $newsTextBackgr;
+    font-size: 1.8em;
+    border-radius: 0 5px 5px 0;
+    margin-top: 100px;
+  }
+}
+.new-device{
+  display: block;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  span{
+    display: block;
+    padding-top: 150px;
+    color: $textColor;
+    font-size: .8em;
+    line-height: 17px;
+    &:hover{
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      background-color: $newsTextBackgr;
+    }
+  }
+  &.device-one {
+    background: url("../images/devices/mimix.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-two{
+    background: url("../images/devices/hp10.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-three{
+    background: url("../images/devices/s8e.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-four{
+    background: url("../images/devices/xperiaxz.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-five{
+    background: url("../images/devices/nokia6.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-six{
+    background: url("../images/devices/g6e.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-seven{
+    background: url("../images/devices/gpixel.gif") no-repeat center;
+    background-size: contain;
+  }
+  &.device-eight{
+    background: url("../images/devices/oneplus3.gif") no-repeat center;
+    background-size: contain;
+  }
+}
+#dp-poll{
+  background-color: $bgrdcolor;
+  border-radius: 10px;
+  padding: 5px;
+  h3{
+    text-align: center;
+    font-size: 2em;
+    background: $newsTextBackgr;
+    height: 45px;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin: 0 0 35px;
+  }
+  span{
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 35px;
+    background-color: $wrapColor;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    &:hover{
+      background-color: $textColorTwo;
+    }
+  }
+  button{
+    width: 100%;
+    outline: none;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #44aaee;
+  }
+}
+      /*FOOTER*/
+footer .container-fluid{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer-wrap{
+  background-color: $navbarColor;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+.site-links {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 70px;
+  &.facebook-link {
+    background: url("../images/1491702536_facebook_online_social_media.png") no-repeat;
+    background-size: cover;
+    &:hover{
+      background: url("../images/fb_hover.png") no-repeat;
+      background-size: cover;
+      transition: background .3s;
+    }
+  }
+  &.google {
+    background: url("../images/1491702594_google_plus_online_social_media.png") no-repeat;
+    background-size: cover;
+    &:hover{
+      background: url("../images/gplus_hover.png") no-repeat;
+      background-size: cover;
+      transition: background .3s;
+    }
+  }
+  &.spotify {
+    background: url("../images/1491702692_Spotify_social_media_logo.png") no-repeat;
+    background-size: cover;
+    &:hover{
+      background: url("../images/Spoty_hover.png") no-repeat;
+      background-size: cover;
+      transition: background .3s;
+    }
+  }
+}
+
+#mymedia{
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+}
+.our-page{
+  display: inline-block;
+  width: 20%;
+}
+
+      /*CONTACT US PAGE*/
+
+main .form-control{
+  margin-bottom: 20px;
+}
+.contact-info{
+  margin-top: 15px;
+}
+#contact-us button{
+  margin-bottom: 30px;
+  outline: none;
+}
+.alert{
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+      /*SGS8 page*/
+
+.device-img-wrap{
+  height: 320px;
+  width: 70%;
+  border-radius: 10px;
+  transition: margin 1s;
+  &:hover{
+    .phone-back{
+      margin: 0;
+      transition: 1s;
+    }
+  }
+  .phone-front{
+    position: relative;
+    z-index: 2;
+  }
+  .phone-back{
+    position: absolute;
+    z-index: 1;
+    margin-left: -100px;
+    transition: margin-left .5s;
+  }
+}
+.base-dev-info{
+  height: 300px;
+  font-size: 1.4em;
+  line-height: 2.5em;
+  span:first-child{
+    padding: 0 4% 0 4%;
+  }
+  .base-info-head{
+    width: 100%;
+    background: #00aad5;
+    background: -moz-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -webkit-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -o-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: -ms-linear-gradient(left, #00aad5 0%, #222831 100%);
+    background: linear-gradient(to right, #00aad5 0%, #222831 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aad5', endColorstr='#222831', GradientType=1 );
+    border-radius: 10px 10px 0 0;
+    .phone-name{
+      font-size: 2em;
+    }
+  }
+  .buy-phone-offer{
+    background-color: $bgrdcolor;
+  }
+  .compare-to{
+    background-color: $navbarColor;
+  }
+  .phone-gallery{
+    background-color: $bgrdcolor;
+    border-radius: 0 0 10px 10px;
+    #gallery-trigger{
+      height: 36px;
+      width: 130px;
+      background: #00aad5;
+      background: -moz-linear-gradient(left, #00aad5 0%, #222831 100%);
+      background: -webkit-linear-gradient(left, #00aad5 0%, #222831 100%);
+      background: -o-linear-gradient(left, #00aad5 0%, #222831 100%);
+      background: -ms-linear-gradient(left, #00aad5 0%, #222831 100%);
+      background: linear-gradient(to right, #00aad5 0%, #222831 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aad5', endColorstr='#222831', GradientType=1 );
+      border-radius: 3px;
+      line-height: 20px;
+      outline: none;
+    }
+  }
+  .gallery{
+    display: none;
+    width: 100%;
+    span{
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border: 3px solid $wrapColor;
+      border-radius: 10px;
+      margin: 20px 15px;
+      &:hover{
+        border: 3px solid $textColorTwo
+      }
+      &.gallery-img-one{
+        background: url("../images/sgs81.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-two{
+        background: url("../images/sgs82.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-three{
+        background: url("../images/sgs83.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-four{
+        background: url("../images/sgs84.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-five{
+        background: url("../images/sgs85.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-six{
+        background: url("../images/sgs86.jpg") no-repeat;
+        background-size: cover;
+      }
+      &.gallery-img-seven{
+        background: url("../images/sgs8box.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+#table-wrap{
+  background-color: $bgrdcolor;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+table tbody tr {
+  &:nth-child(2n) {
+    background-color: $wrapColor;
+  }
+  td:nth-child(2n-1){
+    color: $headingTextColor;
+  }
+}
+#commercial{
+  display: block;
+  width: 100%;
+  height: 710px;
+  background-size: cover !important;
+}
+.sgs8-article{
+  display: block;
+  height: 150px;
+  border-radius: 5px;
+  &:hover{
+    span{
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+  span{
+    display: block;
+    width: 100%;
+    color: $textColor;
+    background-color: $newsTextBackgr;
+    border-radius: 5px 5px 0 0;
+    padding: 5% 0 2% 2%;
+  }
+  &.sgs8-article-one{
+    background: url("../images/sgs8Article1.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.sgs8-article-two{
+    background: url("../images/sgs8Article2.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.sgs8-article-three{
+    background: url("../images/sgs8Article3.jpg") no-repeat;
+    background-size: cover;
+  }
+  &.sgs8-article-four{
+    background: url("../images/sgs8Article4.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+      /*ABOUT US*/
+
+.about-info{
+  span{
+    display: block;
+    text-align: right;
+    line-height: 17px;
+    &:nth-child(2n-1){
+      margin-bottom: 10px;
+    }
+    &:nth-child(2n){
+      color: $headingTextColor;
+    }
+  }
+}
+.about-img{
+  width: 100%;
+  height: 300px;
+  background: url("../images/dpAboutu.jpg") no-repeat;
+  background-size: cover;
+}
+.mission-info{
+  p{
+    text-align: justify;
+  }
+}
+.mission-img{
+  height: 300px;
+  width: 100%;
+  background: url("../images/mission-img.jpg") no-repeat;
+  background-size: cover;
+}
+.constant-contact{
+  display: none;
+  width: 130px;
+  height: 235px;
+  position: fixed;
+  bottom: 10px;
+  background: url("../images/smartphone_icon.png") no-repeat;
+  background-size: cover;
+  padding: 30px 15px;
+  text-align: center;
+  transform: rotate(35deg);
+  span{
+    display: block;
+    width: 67px;
+    color: $textColorTwo;
+  }
+  textarea{
+    width: 100px;
+    height: 154px;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  button{
+    width: 28px;
+    height: 10px;
+    background-color: $textColorTwo;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+
+  /*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+  #container-wrap{
+    padding-top: 350px;
+  }
+  .base-dev-info{
+    margin-bottom: 240px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .newest-dev-img.dev-img-two{
+    display: none;
+  }
+
+}

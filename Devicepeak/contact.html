@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact us</title>
+    <link rel="icon" href="images/icon.gif">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Poiret+One|Titillium+Web" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html">
+                        <span id="logo"></span>
+                        <span id="site-name">
+                            DevicePeak
+                        </span>
+                    </a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Reviews</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropbtn">Brands</a>
+                        <span class="dropdown-content">
+                            <a href="device_sgs8.html">Samsung</a>
+                            <a href="#">Apple</a>
+                            <a href="#">LG</a>
+                            <a href="#">HTC</a>
+                            <a href="#">Huawei</a>
+                            <a href="#">All brands</a>
+                        </span>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search phone">
+                    </div>
+                    <button type="submit" id="subbtn" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="container-wrap">
+            <div class="row">
+                <div class="col-md-2 horizont-text">
+                    contact
+                    <span>us</span>
+                </div>
+                <div class="col-md-10 line-wrap">
+                    <div class="horizont-line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94665.25172089227!2d24.670834076298156!3d42.14409960143581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd108a248763d%3A0x6470d1fa6f1338a0!2z0J_Qu9C-0LLQtNC40LI!5e0!3m2!1sbg!2sbg!4v1488127301790" width="100%" height="228" frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="contact-info">
+                        <p>
+                            <strong>
+                                DevicePeak
+                            </strong>
+                            <br>
+                            str. Our Street 8
+                            <br>
+                            Plovdiv, Bulgaria
+                            <br>
+                            Phone: (+359) 0879-367769
+                        </p>
+                        <strong>
+                            Email
+                        </strong>
+                        <br>
+                        <a href="mailto:devicepeak@gmail.com">devicepeak@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form id="contact-us">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        <input type="email" class="form-control" id="inputMail" placeholder="Email">
+                        <input type="text" pattern=".{10,10}" class="form-control" id="inputPhone" placeholder="Mobile Number">
+                        <input type="text"  maxlength="100" class="form-control" name="message" placeholder="Subject">
+                        <textarea class="form-control" maxlength="400" name="message" rows="7" placeholder="Message"></textarea>
+                        <p id="symbol-left">Max symbols 400</p>
+                        <button type="submit" class="pull-right btn btn-primary">Submit</button>
+                        <div class="alert hidden" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row footer-wrap">
+                <div class="container">
+                    <div class="col-md-4">
+                        <a href="http://facebook.com" class="site-links facebook-link pull-right"></a>
+                        <a href="http://plus.google.com" class="site-links google pull-right"></a>
+                        <a href="http://spotify.com" class="site-links spotify pull-right"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <span id="mymedia">&copy;&nbsp;Mymedia</span>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="about.html" class="our-page">About us</a>
+                        <a href="contact.html" class="our-page">Contact us</a>
+                        <a href="#" class="our-page">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="js/main_contact.js"></script>
+</body>
+</html>
